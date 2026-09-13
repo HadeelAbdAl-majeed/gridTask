@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        
+        #containar{
+            display: grid;
+            grid-template-columns: repeat(4, 290px);
+            grid-template-rows: repeat(3,200px);
+            gap: 5px;
+            margin: 5px;
+        }
+
+        .items{
+            background-color:#e8eef2; 
+            padding:5px ;
+            padding-bottom: 2px;
+        }
+
+        #item2 , #item3 , #item9 , #item12{
+            display: grid;
+            grid-template-columns: repeat(2, 135px);
+            grid-template-rows: repeat(2,91px);
+        }
+
+        #item2 >.sub , #item3 >.sub , #item9 > .sub , #item12 > .sub{
+            background-color: #b2cace;
+            padding:0 2px;
+            margin:3px 2px;
+        } 
+
+        #item6{
+            display: grid;
+            grid-template-rows: repeat(2,auto);
+        }
+
+        #item6 > .sub {
+            background-color: #b2cace;  
+            padding:0 2px;
+            margin:3px 2px;                                 
+        }
+
+        #item7 {
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+        }
+
+        #item7 > .sub {
+            /* width: 280px;
+            height: auto; */
+            background-color: #b2cace;  
+            padding:0 2px;
+            margin:3px 2px;                                 
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="containar">
+        <div id="item1" class="items">item1</div>
+        <div id="item2" class="items">
+            <div id="sub1 " class="sub">sub1</div>
+            <div id="sub2" class="sub">sub2</div>
+            <div id="sub3" class="sub">sub3</div>
+            <div id="sub4" class="sub">sub4</div>
+        </div>
+        <div id="item3" class="items">
+            <div id="sub1 " class="sub">sub1</div>
+            <div id="sub2" class="sub">sub2</div>
+            <div id="sub3" class="sub">sub3</div>
+            <div id="sub4" class="sub">sub4</div>
+        </div>
+        <div id="item4" class="items">item4</div>
+        <div id="item5" class="items">item5</div>
+        <div id="item6" class="items">
+            <div id="sub1 " class="sub">sub1</div>
+            <div id="sub2" class="sub">sub2</div>
+        </div>
+        <div id="item7" class="items">
+            <div id="sub1 " class="sub">sub1</div>
+            <div id="sub2" class="sub">sub2</div>
+        </div>
+        <div id="item8" class="items">item8</div>
+        <div id="item9" class="items">
+            <div id="sub1 " class="sub">sub1</div>
+            <div id="sub2" class="sub">sub2</div>
+            <div id="sub3" class="sub">sub3</div>
+            <div id="sub4" class="sub">sub4</div>
+        </div>
+        <div id="item10" class="items">item10</div>
+        <div id="item11" class="items">item11</div>
+        <div id="item12" class="items">
+            <div id="sub1 " class="sub">sub1</div>
+            <div id="sub2" class="sub">sub2</div>
+            <div id="sub3" class="sub">sub3</div>
+            <div id="sub4" class="sub">sub4</div>
+        </div>
+    </div>
+ 
+    
+    
+</body>
+</html>

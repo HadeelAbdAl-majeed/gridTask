@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #containar{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin:20px 10px;
+        }
+
+        .card{
+           display: flex;
+           flex-direction: column;
+           border: 1px solid #2b7a78;
+           border-radius: 15px;
+           padding: 15px;
+        }
+
+        .item1{
+            height: 180px;
+           display: flex;
+           justify-content: center;
+           margin-bottom: 15px;
+        }
+        
+        .item1 > img{
+
+            width: 200px;
+            height: 200px;
+        }
+
+        .item2{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .item-header{
+
+           margin-bottom: 8px;
+        }
+
+        .paragraph{     
+          font-size: 14px;
+          margin-bottom: 10px
+        }
+
+
+        .item3 button{
+                  
+            background-color: #2b7a78;
+            color: white;
+            border-radius: 20px;
+            border:none;
+            padding: 10px 5px;
+            text-align: center;
+            margin-top: auto;
+            width: 100%;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="containar">
+        <div class="card">
+            <div class="item1">
+                <img src="./images/computer.jpg" alt="">
+            </div>
+            <div class="item2">
+                <h4 class="item-header">Computer Starter Kit</h4>
+                 <p class="paragraph">This is the best computer money can buy, if you don't have much money</p>
+                 <ul class="item-list">
+                    <li>Computer</li>
+                    <li>Monitor</li>
+                    <li>Keyboard</li>
+                    <li>Mouse</li>
+                 </ul>
+            </div>
+            <div class="item3">
+                <button>BUY NOW</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item1">
+                <img src="./images/printer.jpg" alt="">
+            </div>
+            <div class="item2">
+                 <p class="paragraph">Only capable of printing ASCII art</p>
+                 <ul class="item-list">
+                   <li>Paper and ink not included.</li>
+                 </ul>
+            </div>
+            <div class="item3">
+                <button>BUY NOW</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item1">
+                <img src="./images/printer.jpg" alt="">
+            </div>
+            <div class="item2">
+                <h4 class="item-header">Printer 2</h4>
+                 <p class="paragraph">A la 1989.</p>
+                 <ul class="item-list">
+                    <li>Computer</li>
+                    <li>Monitor</li>
+                    <li>Keyboard</li>
+                    <li>Mouse</li>
+                 </ul>
+            </div>
+            <div class="item3">
+                <button>BUY NOW</button>
+            </div>            
+        </div>
+        <div class="card">
+            <div class="item2">
+                <h4 class="item-header">Mouse</h4>
+                 <p class="paragraph">
+                      A computer mouse is a pointing device (hand control) 
+                      that detects two-dimensional motion relative to a surface. 
+                      This motion is typically translated into the motion of a pointer on a display, 
+                      which allows a smooth control of the graphical user interface. Clickity Click!
+                 </p>
+            </div>
+            <div class="item3">
+                <button>BUY NOW</button>
+            </div>           
+        </div>
+        <div class="card">
+            <div class="item1">
+                <img src="./images/computer.jpg" alt="">
+            </div>
+            <div class="item2">
+                <h4 class="item-header">Macintosh 8500</h4>
+                 <p class="paragraph">
+                      This is the best computer money can buy, if you don't
+                      have much money. This computer was state of the art in 1995.
+                 </p>
+            </div>
+            <div class="item3">
+                <button>BUY NOW</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

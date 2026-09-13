@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0;
+            color: azure;
+        }
+
+        #containar{
+            display: grid;
+            grid-template-columns:1.5fr 2fr 1fr ;
+            grid-template-rows:150px 180px 150px ;
+            height: 400px;
+            margin: 10px;
+            gap: 10px;
+        }
+
+        .box{
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        #box1{
+            background-color: blue;
+            grid-column: 1;
+            grid-row: 1/span 2;
+        }
+        
+        #box2{
+            background-color: #112E81;
+            grid-column: 2/ span2;
+            grid-row:1 ;
+        }
+
+        #box3{
+            background-color:#99C2FF;
+            grid-column: 1 ;
+            grid-row:3;
+          
+        }
+
+        #box4{
+
+            background-color:#9BCEC1;
+            grid-row: 2 / span 2;
+           
+        }
+        
+     
+                
+        #box5{
+            background-color:#9BCEC1;
+            grid-column: 3 ;
+            grid-row:2;
+          
+        }
+        #box6{
+            background-color:#C13383;
+            grid-column: 3 ;
+            grid-row:3;
+          
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="containar">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+        <div id="box5" class="box">5</div>
+        <div id="box6"class="box">6</div>
+    </div>
+    
+</body>
+</html>
